@@ -104,7 +104,7 @@ in the template's "js" folder and look for this line of code:
 const cfg = {
 
     // MailChimp URL
-    mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6' 
+    mailChimpURL : 'https://yeulpay.us10.list-manage.com/subscribe/post?u=11af982bad5629013ff7982a8&amp;id=569a735df3&amp;v_id=5303&amp;f_id=004ccce5f0' 
 
 };
 
