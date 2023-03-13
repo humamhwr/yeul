@@ -550,7 +550,7 @@ a {
 svg,
 img,
 video {
-    max-width : 150%;
+    max-width : 120%;
     height    : auto;
 }
 
@@ -3034,12 +3034,14 @@ img.u-pull-left {
     padding      : 0 3.2rem;
     border-color : white;
     color        : white;
+    cursor: pointer;
 }
 
 .s-header__cta .btn:focus,
 .s-header__cta .btn:hover {
     background-color : var(--color-text-dark);
-    border-color     : var(--color-text-dark);
+    border-color     : var(--color-text-light);
+    cursor: pointer;
 }
 
 .sticky .s-header__cta {
@@ -3049,8 +3051,10 @@ img.u-pull-left {
 .sticky .s-header__cta .btn {
     --btn-height     : calc(var(--vspace-btn) - 1.6rem);
     font-size        : calc(var(--text-size) * 0.8333);
-    background-color : rgba(255, 255, 255, 0.1) !important;
+    background-color : rgba(80, 160, 96, 0.5) !important;
     border-color     : transparent;
+    cursor: pointer;
+
 }
 
 /* --------------------------------------------------------------------
@@ -3298,6 +3302,14 @@ img.u-pull-left {
     background-size     : cover;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
 .s-intro__bg::before {
     display        : block;
     content        : "";
@@ -3371,7 +3383,7 @@ img.u-pull-left {
 }
 
 .s-intro__content-title {
-    --text-title-size : 8.8rem;
+    --text-title-size : 6.8rem;
     --text-multiplier : 1;
     font-weight       : 500;
     font-size         : calc(var(--text-title-size) * var(--text-multiplier));
@@ -4435,22 +4447,56 @@ img.u-pull-left {
     margin-bottom : 0;
 }
 
+.s-footer__subscribe input[type="name"],
 .s-footer__subscribe input[type="email"],
+.s-footer__subscribe input[type="number"],
 .s-footer__subscribe input[type="submit"],
 .s-footer__subscribe .ms-status {
     flex : none;
 }
 
-.s-footer__subscribe input[type="email"] {
+
+
+.s-footer__subscribe input[type="name"] {
     --input-height   : 7.2rem;
-    width            : calc(100% - var(--btn-width));
+    width            : calc(40% - var(--btn-width));
     background-color : rgba(255, 255, 255, 0.03);
     color            : white;
     border           : none;
-    border-radius    : var(--border-radius) 0 0 var(--border-radius);
+    border-radius    : var(--border-radius)  var(--border-radius);
     padding          : var(--input-vpadding) calc(2.8rem - 1px);
     text-align       : left;
     margin           : 0;
+    margin-left: 10%;
+
+}
+
+.s-footer__subscribe input[type="email"] {
+    --input-height   : 7.2rem;
+    width            : calc(40% - var(--btn-width));
+    background-color : rgba(255, 255, 255, 0.03);
+    color            : white;
+    border           : none;
+    border-radius    : var(--border-radius)  var(--border-radius);
+    padding          : var(--input-vpadding) calc(2.8rem - 1px);
+    text-align       : left;
+    margin           : 0;
+    margin-left: 5%;
+
+}
+
+.s-footer__subscribe input[type="number"] {
+    --input-height   : 7.2rem;
+    width            : calc(40% - var(--btn-width));
+    background-color : rgba(255, 255, 255, 0.03);
+    color            : white;
+    border           : none;
+    border-radius    : var(--border-radius)  var(--border-radius);
+    padding          : var(--input-vpadding) calc(2.8rem - 1px);
+    text-align       : left;
+    margin           : 0;
+    margin-left: 5%;
+    
 }
 
 .s-footer__subscribe input[type="email"]:focus,
@@ -4460,9 +4506,12 @@ img.u-pull-left {
 
 .s-footer__subscribe input[type="submit"] {
     --btn-height  : var(--input-height);
-    width         : var(--btn-width);
-    border-radius : 0 var(--border-radius) var(--border-radius) 0;
+    width         : calc(50% - var(--btn-width));
+    border-radius : 10px;
     margin        : 0;
+    margin-left: 33%;
+    margin-top: 5%;
+
 }
 
 .s-footer__subscribe .mc-status {
