@@ -3674,8 +3674,8 @@ img.u-pull-left {
 .s-about {
     --screen-width   : 340px;
     --screen-height  : 736px;
-    padding-top      : var(--vspace-5);
-    padding-bottom   : var(--vspace-5);
+    padding-top      : var(--vspace-1);
+    padding-bottom   : var(--vspace-1);
     background-color : var(--color-gray-6);
 }
 
