@@ -308,10 +308,14 @@
 
         // Submit the form 
         function submitMailChimpForm(form) {
-
             let url = cfg.mailChimpURL;
             let emailField = form.querySelector('#mce-EMAIL');
-            let serialize = '&' + encodeURIComponent(emailField.name) + '=' + encodeURIComponent(emailField.value);
+            let nameField = form.querySelector('#mce-NAME');
+            let phoneField = form.querySelector('#mce-PHONE');
+
+            let serialize = '&' + encodeURIComponent(nameField.name) + '=' + encodeURIComponent(nameField.value) + 
+            '&' + encodeURIComponent(emailField.name) + '=' + encodeURIComponent(emailField.value) + 
+            '&' + encodeURIComponent(phoneField.name) + '=' + encodeURIComponent(phoneField.value);
 
             if (url == '') return;
 
@@ -322,7 +326,7 @@
             var ref = window.document.getElementsByTagName( 'script' )[ 0 ];
             var script = window.document.createElement( 'script' );
             script.src = url;
-
+            console.log(url)
             // Create global variable for the status container
             window.mcStatus = form.querySelector('.mc-status');
             window.mcStatus.classList.remove('error-message', 'success-message')
