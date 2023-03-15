@@ -2757,8 +2757,22 @@ td:last-child {
     line-height : calc(0.9375 * var(--space));
 }
 
+.text-display-lg {
+    font-size   : var(--text-lg);
+    font-weight : 500;
+    line-height : 1.191;
+    margin-top  : 0;
+}
+
 .text-display-1 {
     font-size   : var(--text-display-1);
+    font-weight : 500;
+    line-height : 1.191;
+    margin-top  : 0;
+}
+
+.text-display-3 {
+    font-size   : var(--text-display-3);
     font-weight : 500;
     line-height : 1.191;
     margin-top  : 0;
@@ -3296,12 +3310,74 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/ales-nesetril-ex_p4AaBxbs-unsplash.png);
+    background-image    : url(../images/test2.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
+    z-index: 1;
 }
+.s-intro__bg_secondary {
+    display             : block;
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    right               : 0;
+    bottom              : 0;
+    width               : 100%;
+    height              : 100%;
+    background-image    : url(../images/tire\ copy.png);
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-size     : cover;
+        opacity: 0.1;
+        z-index: 2;
+    animation:  hero 3s linear forwards;
+}
+.s-intro__bg_third {
+    display             : block;
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    right               : 0;
+    bottom              : 0;
+    width               : 100%;
+    height              : 100%;
+    background-image    : url(../images/yeulicon.png);
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-size     : cover;
+        z-index: 3;
+    animation:  yeulicon 3s linear forwards;
+}
+@keyframes yeulicon{
+    0%{
+        transform: translateY(-30vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
 
+        opacity: 0;
+    }
+}
+@keyframes hero{
+    0%{
+        transform: translateY(-30vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+
+        opacity: 0;
+    }
+}
 #myVideo {
     position: fixed;
     right: 0;
@@ -3383,7 +3459,7 @@ img.u-pull-left {
 }
 
 .s-intro__content-title {
-    --text-title-size : 6.8rem;
+    --text-title-size : 7.8rem;
     --text-multiplier : 1;
     font-weight       : 500;
     font-size         : calc(var(--text-title-size) * var(--text-multiplier));
