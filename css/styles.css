@@ -3314,7 +3314,7 @@ img.u-pull-left {
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
-    z-index: 1;
+    z-index: -1;
 }
 .s-intro__bg_secondary {
     display             : block;
@@ -3329,8 +3329,8 @@ img.u-pull-left {
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
-        opacity: 0.1;
-        z-index: 2;
+    opacity: 0.1;
+    z-index: 2;
     animation:  hero 3s linear forwards;
 }
 .s-intro__bg_third {
@@ -3346,7 +3346,7 @@ img.u-pull-left {
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
-        z-index: 3;
+    z-index: 3;
     animation:  yeulicon 3s linear forwards;
 }
 @keyframes yeulicon{
@@ -3363,6 +3363,7 @@ img.u-pull-left {
     100%{
 
         opacity: 0;
+        z-index: -1;
     }
 }
 @keyframes hero{
@@ -3376,6 +3377,8 @@ img.u-pull-left {
     100%{
 
         opacity: 0;
+        z-index: -1;
+
     }
 }
 #myVideo {
@@ -3413,7 +3416,7 @@ img.u-pull-left {
     height         : 100%;
     background     : linear-gradient(0deg, black 15%, rgba(0, 0, 0, 0) 100%);
     pointer-events : none;
-    opacity        : 0.3;
+    opacity        : 0.3;    
 }
 
 /* --------------------------------------------------------------------
@@ -3421,7 +3424,6 @@ img.u-pull-left {
  * -------------------------------------------------------------------- */
 .s-intro__content {
     --right-block-width : 360px;
-    z-index             : 2;
     align-items         : flex-end;
     justify-content     : space-between;
     max-width           : 1400px;
