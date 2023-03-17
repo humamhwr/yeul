@@ -3380,13 +3380,7 @@ img.u-pull-left {
 
     }
 }
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
+
 
 .s-intro__bg::before {
     display        : block;
