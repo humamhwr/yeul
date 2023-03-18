@@ -3676,6 +3676,10 @@ img.u-pull-left {
         padding-top : 0;
         max-width   : var(--right-block-width);
     }
+    .s-intro__bg, .s-intro__bg_secondary, .s-intro__bg_third {
+        background-position: 90%;
+        z-index: -1;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -3741,10 +3745,6 @@ img.u-pull-left {
     .s-intro__scroll svg {
         height : var(--vspace-0_75);
         width  : var(--vspace-0_75);
-    }
-    .s-intro__bg, .s-intro__bg_secondary, .s-intro__bg_third {
-        background-position: 90%;
-        z-index: -1;
     }
 }
 
