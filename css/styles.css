@@ -3755,7 +3755,14 @@ img.u-pull-left {
  *
  *
  * ------------------------------------------------------------------- */
-.s-about {
+
+ .body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 40px;
+ }
+
+ .s-about {
     --screen-width   : 340px;
     --screen-height  : 736px;
     padding-top      : var(--vspace-1);
@@ -3809,6 +3816,7 @@ img.u-pull-left {
  * -------------------------------------------------------------------- */
 .s-about__info {
     margin-top : var(--vspace-4);
+    scroll-snap-align: start;
 }
 
 .s-about__info-slider {
@@ -4042,6 +4050,10 @@ img.u-pull-left {
 
     .s-about__stats h5 {
         font-size : calc(var(--text-size) * 0.8333);
+    }
+
+    .s-about__info:nth-child(even) .column:nth-child(1) {
+        order: 1;
     }
 }
 
