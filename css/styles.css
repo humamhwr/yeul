@@ -3720,15 +3720,18 @@ img.u-pull-left {
 
     .s-intro__content-title {
         font-size : var(--text-xxxl);
+        margin-bottom: 10%;
     }
 
     .s-intro__content-btn {
         margin-right : var(--vspace-0_75);
-        margin-top: -10%;
+        position: relative;
+        bottom: 5rem;
     }
     .s-intro__content-desc {
-        font-size : medium;
-
+        font-size : 1.5rem;
+        position: relative;
+        bottom: 2.5rem;
     }
 
     .s-intro__scroll {
