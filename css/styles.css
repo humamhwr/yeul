@@ -3715,6 +3715,7 @@ img.u-pull-left {
 @media screen and (max-width: 400px) {
     .s-intro__content-inner {
         padding-right : 0;
+        font-size: 1;
     }
 
     .s-intro__content-title {
@@ -3723,6 +3724,11 @@ img.u-pull-left {
 
     .s-intro__content-btn {
         margin-right : var(--vspace-0_75);
+        margin-top: -10%;
+    }
+    .s-intro__content-desc {
+        font-size : medium;
+
     }
 
     .s-intro__scroll {
