@@ -3309,7 +3309,7 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/yeul-card-shaded-hero.png);
+    background-image    : url(../images/yeulhero2.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3324,13 +3324,13 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/tire-hero.png);
+    background-image    : url(../images/yeultire2.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
-    opacity: 0.1;
+    opacity: 0.15;
     z-index: 2;
-    animation:  hero 3s linear forwards;
+    animation:  hero 2s linear forwards;
 }
 .s-intro__bg_third {
     display             : block;
@@ -3341,16 +3341,16 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/yeul-logo-hero.png);
+    background-image    : url(../images/yeulicon2.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
     z-index: 3;
-    animation:  yeulicon 3s linear forwards;
+    animation:  yeulicon 2s linear forwards;
 }
 @keyframes yeulicon{
     0%{
-        transform: translateY(-30vh);
+        transform: translateY(-20vh);
         opacity: 0;
     }
     50%{
@@ -3361,13 +3361,12 @@ img.u-pull-left {
     }
     100%{
 
-        opacity: 0;
         z-index: -1;
     }
 }
 @keyframes hero{
     0%{
-        transform: translateY(-30vh);
+        transform: translateY(-10vh);
         opacity: 0;
     }
     50%{
@@ -3375,7 +3374,6 @@ img.u-pull-left {
     }
     100%{
 
-        opacity: 0;
         z-index: -1;
 
     }
@@ -3677,7 +3675,7 @@ img.u-pull-left {
         max-width   : var(--right-block-width);
     }
     .s-intro__bg, .s-intro__bg_secondary, .s-intro__bg_third {
-        background-position: 90%;
+        background-position: 97%;
         z-index: -1;
     }
 }
