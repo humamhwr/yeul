@@ -3037,6 +3037,14 @@ img.u-pull-left {
     margin-right : 4rem;
     margin-left  : auto;
 }
+.s-header__cta .lng {
+    font-size    : calc(var(--text-size) * 0.8889);
+    font-weight  : 300;
+    color: #000000;
+    margin       : 0;
+    padding      : 0 3.2rem;
+    cursor: pointer;
+}
 
 .s-header__cta .btn {
     --btn-height : calc(var(--vspace-btn) - 1rem);
@@ -3049,6 +3057,8 @@ img.u-pull-left {
     color        : white;
     cursor: pointer;
 }
+
+
 
 .s-header__cta .btn:focus,
 .s-header__cta .btn:hover {
