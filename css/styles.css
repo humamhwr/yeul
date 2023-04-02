@@ -3002,6 +3002,9 @@ img.u-pull-left {
  * -------------------------------------------------------------------- */
 .s-header__nav {
     margin-left : var(--vspace-1_25);
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 .s-header__nav ul {
@@ -3242,9 +3245,6 @@ img.u-pull-left {
         visibility  : hidden;
     }
 
-    .s-header__cta {
-        display : none;
-    }
 
     .s-header__menu-toggle {
         display : block;
