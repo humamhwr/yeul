@@ -3053,6 +3053,7 @@ img.u-pull-left {
     --btn-height : calc(var(--vspace-btn) - 1rem);
     font-size    : calc(var(--text-size) * 0.8889);
     line-height  : calc(var(--btn-height) - 4px);
+    display: inline-block;
     font-weight  : 400;
     margin       : 0;
     padding      : 0 3.2rem;
@@ -3060,8 +3061,6 @@ img.u-pull-left {
     color        : white;
     cursor: pointer;
 }
-
-
 
 .s-header__cta .btn:focus,
 .s-header__cta .btn:hover {
@@ -3071,7 +3070,7 @@ img.u-pull-left {
 }
 
 .sticky .s-header__cta {
-    margin-right : 0;
+    line-height         : var(--header-height);
 }
 
 .sticky .s-header__cta .btn {
